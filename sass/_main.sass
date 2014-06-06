@@ -1,2 +1,288 @@
 // Normally mainpage styles
- 
+.out
+	width: 1148px 
+	margin: 0 auto
+
+
+.header
+	background: #94B3AE
+	padding: 18px 0 15px 0
+	overflow: hidden
+	border-bottom: 9px solid #9B8052 
+	.header__logo
+		float: left
+		+s(logo)
+		+hide-text
+		display: block
+		margin-left: 38px 
+	ul
+		list-style: none
+		text-align: right
+		font-size: 16px 
+		text-transform: uppercase
+		padding-top: 16px 
+		margin-right: 48px 
+		float: right
+		li
+			display: inline-block
+		a
+			display: inline-block
+			color: #053766
+			text-decoration: none 
+			margin-left: 58px 
+
+
+.buspromo
+	position: relative
+	background: #94B3AE 
+	text-align: center
+	padding-bottom: 76px 
+	margin-bottom: 51px 
+	.buspromo__dates
+		+s(date)
+		+hide-text
+		position: absolute
+		left: 33px
+		top: 55px 
+	.buspromo__alphajazz
+		right: 44px 
+		top: 60px 
+		position: absolute
+		+s(jazz)
+	.buspromo__text
+		font-size: 20px 
+		color: #082038
+		text-transform: uppercase
+		text-align: center
+		padding: 0 40px  
+		strong
+			+b
+			font-weight: normal
+.h2
+	font-weight: normal
+	+b
+	background: #518C85
+	text-align: center
+	font-size: 36px  
+	height: 65px
+	line-height: 65px
+	border-bottom: 4px solid #fff
+	box-shadow: 0 4px 0 #9B8052
+	margin-bottom: 24px  
+	text-transform: uppercase
+	color: #fff  
+.videostart
+	position: absolute
+	top: 50%
+	left: 50%
+	width: 300px   
+	text-align: center
+	margin-left: -150px 
+	margin-top: -40px 
+	cursor: pointer
+	i
+		+s(video)
+		display: inline-block
+	.videostart__label
+		display: block
+		font-weight: normal
+		+b
+		text-transform: uppercase
+		font-size: 26px 
+		color: #fff 
+		margin-top: 14px 
+.busonline
+	.busonline__video
+		position: relative
+
+.bustext
+	margin-top: 93px 
+	overflow: hidden
+	.bustext__info
+		width: 505px 
+		margin-left: 64px 
+	.bustext__features
+		list-style: none
+		margin-bottom: 47px 
+		li
+			display: inline-block
+			vertical-align: bottom
+			margin: 0 20px 
+			text-align: center
+		span
+			font-size: 12px 
+			color: #006E68
+			text-transform: uppercase 
+			display: block
+			margin-top: 5px 
+		i
+			display: inline-block
+		@each $s in sound,lviv,wifi,mood
+			.i-#{$s}
+				+s(#{$s})
+	.bustext__text
+		font-size: 16px 
+		color: #082038
+		text-transform: uppercase
+		strong
+			+b
+	.share
+		margin-top: 40px 
+	.bustext__welcome
+		float: right
+		margin-top: 61px 
+		margin-right: 73px 
+.slider
+	// background: green 
+	height: 220px 
+	margin-top: 91px 
+	position: relative
+	z-index: 200 
+	img
+		position: absolute
+		left: 0
+		top: -75px  
+
+.map
+	margin-bottom: 50px 
+
+
+
+
+.hashtag
+	margin-bottom: 109px 
+	.hashtag__title
+		text-align: center
+		border-top: 2px solid #006E68 
+		span
+			display: inline-block
+			position: relative
+			top: -.5em 
+			padding: 0 65px
+			background: #fff
+			font-size: 47px   
+			font-weight: normal
+			color: #0F4A49
+			line-height: 1 
+			text-transform: uppercase
+			+b 
+#instafeed
+	margin-right: -13px 
+	font-size: 0 
+	a
+		width: 220px 
+		display: inline-block
+		margin: 0 12px 12px 0
+		img
+			display: block
+			width: 220px 
+
+
+
+// borjomimusic
+.borjomimusic
+	position: relative
+	.borjomimusic__info
+		width: 543px 
+		margin-left: 50px 
+		margin-bottom: 61px 
+	.borjomimusic__illustration
+		position: absolute
+		top: 107px 
+		right: 83px 
+		z-index: 10 
+	.borjomimusicg__text
+		font-size: 16px 
+		text-transform: uppercase
+		color: #082038
+		padding-top: 28px 
+		strong
+			font-weight: normal
+			+b
+
+	.share
+		margin-top: 40px 
+	.borjomimusic__map
+		margin-top: 45px 
+	.borjomimusic__video
+		position: relative
+
+.water
+	margin-bottom: 107px 
+	.water__text
+		text-align: center
+		font-size: 16px 
+		color: #082038
+		text-transform: uppercase
+		width: 60%
+		margin: 0 auto
+		padding-top: 20px   
+		strong
+			font-weight: normal
+			+b
+		.share
+			margin-top: 33px 
+	.water__pics
+		overflow: hidden
+		ul
+			float: left
+			list-style: none
+			width: 457px 
+			li
+				float: left
+				margin: 0 7px 7px 0 
+			img
+				display: block
+		ul+ul
+			float: right
+			width: auto 
+			width: 694px 
+			overflow: hidden
+			margin-left: -6px 
+
+
+.photo3d
+	margin-bottom: 70px 
+	.photo3d__info
+		overflow: hidden
+	.photo3d__pic
+		img
+			display: block
+	.photo3d__text
+		float: left
+		width: 635px - 50px - 50px
+		font-size: 16px 
+		color: #082038
+		text-transform: uppercase
+		padding: 70px 50px 0 50px 
+		strong
+			font-weight: normal
+			+b
+		.share
+			margin-top: 20px 
+	.photo3d__map
+		float: right
+.friends
+	border-top: 17px solid #006E68
+	border-bottom: 17px solid #006E68
+	padding: 34px 0 41px 0
+	text-align: center
+	h3
+		font-weight: normal
+		+b
+		font-size: 26px 
+		color: #2E8A86
+		text-transform: uppercase
+		margin-bottom: 16px
+	ul
+		list-style: none
+		text-align: center
+		font-size: 0 
+		li
+			display: inline-block
+		a
+			display: inline-block
+			margin-right: 9px 
+	@each $s in fb,tw,in,gp
+		.friends__#{$s}
+			+s(#{$s})
