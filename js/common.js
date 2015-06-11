@@ -1,10 +1,35 @@
 head.ready(function() {
 
 
-
-$.getJSON( "http://coderiver.github.io/borjomi/test.js" )
-  .done(function( json ) {
-    g = json;
+g = { 
+"firstgallery":[
+    {"small":"http://lorempixel.com/150/150/", "big":"img/01.jpg"},
+    {"small":"http://lorempixel.com/150/150/", "big":"img/01.jpg"},
+    {"small":"http://lorempixel.com/150/150/", "big":"img/01.jpg"},
+    {"small":"http://lorempixel.com/150/150/", "big":"img/01.jpg"},
+    {"small":"http://lorempixel.com/150/150/", "big":"img/01.jpg"},
+    {"small":"http://lorempixel.com/150/150/", "big":"img/01.jpg"},
+    {"small":"http://lorempixel.com/150/150/", "big":"img/01.jpg"},
+    {"small":"http://lorempixel.com/150/150/", "big":"img/01.jpg"},
+    {"small":"http://lorempixel.com/150/150/", "big":"img/01.jpg"}
+],
+"secondgallery":[
+    {"small":"http://lorempixel.com/150/150/", "big":"img/01.jpg"},
+    {"small":"http://lorempixel.com/150/150/", "big":"img/01.jpg"},
+    {"small":"http://lorempixel.com/150/150/", "big":"img/01.jpg"},
+    {"small":"http://lorempixel.com/150/150/", "big":"img/01.jpg"},
+    {"small":"http://lorempixel.com/150/150/", "big":"img/01.jpg"},
+    {"small":"http://lorempixel.com/150/150/", "big":"img/01.jpg"},
+    {"small":"http://lorempixel.com/150/150/", "big":"img/01.jpg"},
+    {"small":"http://lorempixel.com/150/150/", "big":"img/01.jpg"},
+    {"small":"http://lorempixel.com/150/150/", "big":"img/01.jpg"},
+    {"small":"http://lorempixel.com/150/150/", "big":"img/01.jpg"}
+]
+};
+// $.getJSON( "http://coderiver.github.io/borjomi/test.js" )
+//   .done(function( json ) {
+//     g = json;
+//     alert('a');
     function createg(arr, targetdiv,title){
 		if(arr.length>0){
 			preresult = '<div class="hashtag"><div class="hashtag__title"><span>#'+title+'</span></div><div class="hashtag__feed">';
@@ -20,33 +45,22 @@ $.getJSON( "http://coderiver.github.io/borjomi/test.js" )
 
 	a1 = g.firstgallery;
 	a2 = g.secondgallery;
-	a3 = g.thirdgallery;
-	a4 = g.fourthgallery;
+	// a3 = g.thirdgallery;
+	// a4 = g.fourthgallery;
 	createg(a1,'firstgallery','borjomibus');
 	createg(a2,'secondgallery','borjomimusic');
-	createg(a3,'thirdgallery','borjomiwater');
-	createg(a4,'fourthgallery','borjomi3d');
+	// createg(a3,'thirdgallery','borjomiwater');
+	// createg(a4,'fourthgallery','borjomi3d');
 
 
 
-  })
-  .fail(function( jqxhr, textStatus, error ) {
-    var err = textStatus + ", " + error;
-    console.log( "Request Failed: " + err );
-});
+//   })
+//   .fail(function( jqxhr, textStatus, error ) {
+//     var err = textStatus + ", " + error;
+//     console.log( "Request Failed: " + err );
+// });
 
-// g = { 
-// "firstgallery":[
-//     {"small":"img/poster1.jpg", "big":"img/01.jpg"},
-//     {"small":"img/poster2.jpg", "big":"img/01.jpg"},
-//     {"small":"img/poster3.jpg", "big":"img/01.jpg"}
-// ],
-// "secondgallery":[
-//     {"small":"img/poster4.jpg", "big":"img/01.jpg"},
-//     {"small":"img/poster5.jpg", "big":"img/01.jpg"},
-//     {"small":"img/poster6.jpg", "big":"img/01.jpg"}
-// ]
-// };
+
 
 
 

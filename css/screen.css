@@ -178,13 +178,13 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; font-f
 @media only screen and (max-width: 1148px) { .schedule table { display: none; } }
 .schedule table a { display: block; padding: 0 10px; text-decoration: none; color: #001f3a; }
 .schedule table thead th { font-weight: normal; text-align: center; border-right: 10px solid white; }
-.schedule table thead th:first-child { text-align: left; }
-.schedule table thead th:first-child div { padding-left: 15px; }
-.schedule table thead th div { background: #9b8052; height: 28px; line-height: 41px; font-size: 28px; color: white; border-bottom: 10px solid white; }
+.schedule table thead th div { background: #9b8052; background: #a97f4d; font-size: 26px; height: 40px; line-height: 44px; color: white; border-bottom: 10px solid white; }
 .schedule table thead th div strong { font-weight: normal; font-family: dinb, arial, sans-serif; }
-.schedule table tbody td, .schedule table tbody th { background: #c4d4cf; font-size: 18px; color: #001f3a; border-bottom: 3px solid white; border-right: 10px solid white; }
+.schedule table tbody td, .schedule table tbody th { background: #c4d4cf; background: #33938f; font-size: 18px; color: #001f3a; color: white; border-bottom: 3px solid white; border-right: 10px solid white; }
+.schedule table tbody td a, .schedule table tbody th a { color: white; }
 .schedule table tbody td:hover, .schedule table tbody th:hover { opacity: 0.7; }
-.schedule table tbody th { font-weight: normal; text-align: left; padding-left: 15px; height: 29px; vertical-align: middle; }
+.schedule table tbody th { font-weight: normal; text-align: center; height: 32px; vertical-align: middle; background: white; font-size: 18px; color: #aa7f4d; padding: 0; }
+.schedule table tbody th div { width: 100%; box-shadow: inset 0 0 0 2px #aa7f4d; height: 28px; line-height: 28px; }
 .schedule table tbody td { text-align: center; vertical-align: middle; text-transform: uppercase; }
 .schedule table tbody td.empty { background: white; }
 
