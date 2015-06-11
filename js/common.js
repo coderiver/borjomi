@@ -32,7 +32,7 @@ g = {
 //     alert('a');
     function createg(arr, targetdiv,title){
 		if(arr.length>0){
-			preresult = '<div class="hashtag"><div class="hashtag__title"><span>#'+title+'</span></div><div class="hashtag__feed">';
+			preresult = '<div class="hashtag"><div class="hashtag__title"><span>'+title+'</span></div><div class="hashtag__feed">';
 			postresult = '</div></div>'
 			result = '';
 			for (var i = 0; i < arr.length; i++) { 
@@ -48,7 +48,7 @@ g = {
 	// a3 = g.thirdgallery;
 	// a4 = g.fourthgallery;
 	createg(a1,'firstgallery','borjomibus');
-	createg(a2,'secondgallery','borjomimusic');
+	createg(a2,'secondgallery','галерея #borjomibus');
 	// createg(a3,'thirdgallery','borjomiwater');
 	// createg(a4,'fourthgallery','borjomi3d');
 

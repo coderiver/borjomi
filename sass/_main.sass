@@ -19,12 +19,13 @@
 
 .header
 	background: #94B3AE
-	padding: 18px 0 15px 0
+	background: #fff 
+	padding: 7px 0 15px 0
 	overflow: hidden
 	border-bottom: 9px solid #9B8052 
 	.header__logo
 		float: left
-		+s(logo)
+		+s(logo1)
 		+hide-text
 		display: block
 		margin-left: 38px 
@@ -33,8 +34,8 @@
 		text-align: right
 		font-size: 16px 
 		text-transform: uppercase
-		padding-top: 16px 
-		margin-right: 48px 
+		padding-top: 13px 
+		// margin-right: 48px 
 		float: right
 		+r1
 			display: none
@@ -43,10 +44,17 @@
 		a
 			display: inline-block
 			color: #053766
+			color: #AA7F4D 
 			text-decoration: none 
-			margin-left: 38px 
+			margin-left: 12px 
+			padding: 0 22px 
+			height: 32px 
+			line-height: 32px 
+			border: 3px solid #AA7F4D 
 			&:hover
-				color: #006d67 
+				color: #fff
+				background: #AA7F4D 
+				
 	select
 		display: none
 		+r1
@@ -60,20 +68,33 @@
 	position: relative
 	background: #94B3AE 
 	text-align: center
-	padding-bottom: 76px 
+	// padding-bottom: 76px 
 	margin-bottom: 101px 
 	.buspromo__illustration
 		overflow: hidden
+		background: url(../img/top2.jpg) no-repeat 50% 0
+		-webkit-background-size: cover 
+		-o-background-size: cover 
+		background-size: cover  
+		padding: 500px 0 60px 0 
 		img
 			display: block
-			width: 100% 
+			width: 100%  
 	.buspromo__dates
-		+s(date)
+		+s(when)
 		+hide-text
 		position: absolute
-		left: 33px
-		top: 55px 
-		display: none
+		left: 37px
+		top: 49px 
+		// display: none
+	.buspromo__bus
+		top: 49px 
+		right: 34px 
+		position: absolute
+		display: block
+		+s(bus)
+		+hide-text
+
 	.buspromo__alphajazz
 		right: 44px 
 		top: 60px 
@@ -81,14 +102,38 @@
 		+s(jazz)
 		background: transparent 
 	.buspromo__text
-		font-size: 20px 
-		color: #082038
+		font-size: 15px 
 		text-transform: uppercase
 		text-align: center
 		padding: 0 40px  
+		color: #fff 
+		line-height: 1.1 
+		 
+		p
+			max-width: 600px 
+			margin: 0 auto
 		strong
 			+b
 			font-weight: normal
+	.buspromo__actions
+		margin-top: 64px 
+		text-align: center
+		a
+			display: inline-block
+			border: 3px solid #fff
+			font-size: 20px 
+			text-transform: uppercase
+			text-decoration: none
+			color: #fff 
+			padding: 0 22px
+			height: 42px  
+			line-height: 42px 
+			&:first-child
+				margin-right: 100px 
+			&:hover
+				background: #AA7F4D
+				color: #fff  
+				border-color: #AA7F4D 
 .h2
 	font-weight: normal
 	+b
@@ -273,16 +318,17 @@
 	//display: none
 	.hashtag__title
 		text-align: center
-		border-top: 2px solid #006E68 
+		border-top: 3px solid #AA7F4D 
+		margin-bottom: 10px 
 		span
 			display: inline-block
 			position: relative
 			top: -.5em 
 			padding: 0 65px
 			background: #fff
-			font-size: 47px   
+			font-size: 24px   
 			font-weight: normal
-			color: #0F4A49
+			color: #001F3A
 			line-height: 1 
 			text-transform: uppercase
 			+b 
