@@ -21,20 +21,20 @@
 <div class="out">
 
  <div class="h">
- 	<a href='#' class="h__back">повернутися</a>
+ 	<a href='#' onclick="history.go(-1);"  class="h__back">повернутися</a>
  	<div class="h__text">
  		Форма реєстрації для участі<br>
 у Фестивалі виконавців джазу
  	</div>
  </div>
- <div class="form">
+ <form class="form" method="POST" action="send.php">
 	<div class="field">
 		<label for="" class="field__label">
 			чи можете ви виступати у Львові в період з 25 до 29 червня? (протягом одного дня в цей період)
 		</label>
 		<div class="field__right">
-			<label for="aa1" class="checkbox"><input type="radio" name="aa" id="aa1"><i></i><span>ТАК</span></label>
-			<label for="aa2" class="checkbox"><input type="radio" name="aa" id="aa2"><i></i><span>НI</span></label>
+			<label for="aa1" class="checkbox"><input type="radio" name="aa" id="aa1" value="YES"><i></i><span>ТАК</span></label>
+			<label for="aa2" class="checkbox"><input type="radio" name="aa" id="aa2" value="NO"><i></i><span>НI</span></label>
 		</div>
 	</div>
 	<!-- end field -->
@@ -42,7 +42,7 @@
 	<div class="field">
 		<label for="" class="field__label">Як називається ваш музичний гурт?</label>
 		<div class="field__right">
-			<input type="text" name="" id="">
+			<input type="text" name="title" id="">
 		</div>
 	</div>
 	<!-- end field -->
@@ -62,7 +62,7 @@
 	<div class="field">
 		<label for="" class="field__label">Музику якого стилю\напряму ви виконуєте?</label>
 		<div class="field__right">
-			<input type="text" name="" id="">
+			<input type="text" name="style" id="">
 		</div>
 	</div>
 	<!-- end field -->
@@ -70,7 +70,7 @@
 	<div class="field">
 		<label for="" class="field__label">Які інструменти ви використовуєте?</label>
 		<div class="field__right">
-			<input type="text" name="" id="">
+			<input type="text" name="instrum" id="">
 		</div>
 	</div>
 	<!-- end field -->
@@ -78,7 +78,7 @@
 	<div class="field">
 		<label for="" class="field__label">Скільки музикантів у вашому гурті?</label>
 		<div class="field__right">
-			<input type="text" name="" id="">
+			<input type="text" name="number" id="">
 		</div>
 	</div>
 	<!-- end field -->
@@ -86,7 +86,7 @@
 	<div class="field">
 		<label for="" class="field__label">Коли був створений ваш колектив? Назвіть дату.</label>
 		<div class="field__right">
-			<input type="text" name="" id="">
+			<input type="text" name="birth" id="">
 		</div>
 	</div>
 	<!-- end field -->
@@ -94,7 +94,7 @@
 	<div class="field">
 		<label for="" class="field__label">Дайте посилання на відео із вашими виступами (на сайті, каналі на Youtube тощо)</label>
 		<div class="field__right">
-			<input type="text" name="" id="">
+			<input type="text" name="youtube" id="">
 		</div>
 	</div>
 	<!-- end field -->
@@ -102,7 +102,7 @@
 	<div class="field">
 		<label for="" class="field__label">Скільки кавер-версій у вашому репертуарі? </label>
 		<div class="field__right">
-			<input type="text" name="" id="">
+			<input type="text" name="covers" id="">
 		</div>
 	</div>
 	<!-- end field -->
@@ -110,7 +110,7 @@
 	<div class="field">
 		<label for="" class="field__label">Скільки авторських композицій у вашому репертуарі? </label>
 		<div class="field__right">
-			<input type="text" name="" id="">
+			<input type="text" name="compos" id="">
 		</div>
 	</div>
 	<!-- end field -->
@@ -121,8 +121,8 @@
 			Чи є у вас концертні костюми?
 		</label>
 		<div class="field__right">
-			<label for="bb1" class="checkbox"><input type="radio" name="bb" id="bb1"><i></i><span>ТАК</span></label>
-			<label for="bb2" class="checkbox"><input type="radio" name="bb" id="bb2"><i></i><span>НI</span></label>
+			<label for="bb1" class="checkbox"><input type="radio" name="bb" id="bb1" value="YES"><i></i><span>ТАК</span></label>
+			<label for="bb2" class="checkbox"><input type="radio" name="bb" id="bb2" value="NO"><i></i><span>НI</span></label>
 		</div>
 	</div>
 
@@ -132,7 +132,7 @@
 		<label for="" class="field__label">Чи брали ви участь у фестивалях і конкурсах?<br>
 Якщо так, то в яких саме?</label>
 		<div class="field__right">
-			<input type="text" name="" id="">
+			<input type="text" name="fest" id="">
 		</div>
 	</div>
 	<!-- end field -->
@@ -141,16 +141,24 @@
 	<div class="field">
 		<label for="" class="field__label">Вкажіть іншу інформацію про ваш гурт</label>
 		<div class="field__right">
-			<input type="text" name="" id="">
+			<input type="text" name="other" id="">
 		</div>
 	</div>
 	<!-- end field -->
 
 	<!-- begin field  -->
 	<div class="field is-last">
-		<label for="" class="field__label">Вкажіть контактну інформацію</label>
+		<label for="" class="field__label">Вкажіть номер телефона</label>
 		<div class="field__right">
-			<input type="text" name="" id="">
+			<input type="text" name="phone" id="">
+		</div>
+	</div>
+	<!-- end field -->
+	<!-- begin field  -->
+	<div class="field is-last">
+		<label for="" class="field__label">Вкажіть e-mail</label>
+		<div class="field__right">
+			<input type="text" name="email" id="">
 		</div>
 	</div>
 	<!-- end field -->
@@ -162,7 +170,7 @@
  		e-mail: alisa.grynchuk@gmail.com<br>
  	</div>
  	
- </div>
+ </form>
 	
 </div>
 <!-- END out-->

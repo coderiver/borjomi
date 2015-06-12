@@ -228,15 +228,17 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; font-f
 
 .checkbox { cursor: pointer; margin-right: 22px; }
 .checkbox span { font-size: 16px; vertical-align: middle; display: inline-block; }
-.checkbox i { height: 33px; width: 33px; border: 3px solid #aa7f4d; display: inline-block; vertical-align: middle; position: relative; margin-right: 7px; }
+.checkbox i { height: 31px; width: 31px; border: 3px solid #aa7f4d; display: inline-block; vertical-align: middle; position: relative; margin-right: 7px; }
 .checkbox input { display: none; }
-.checkbox input:checked + i:before { position: absolute; content: " "; height: 14px; width: 14px; background: #007873; top: 10px; left: 10px; }
+.checkbox input:checked + i:before { position: absolute; content: " "; height: 14px; width: 14px; background: #007873; top: 9px; left: 9px; }
 
 .rules { max-width: 740px; margin: 30px auto; }
 @media only screen and (max-width: 700px) { .rules { margin: 30px 20px; } }
 .rules a { color: #b49069; }
 .rules h3 { text-transform: uppercase; font-weight: normal; font-size: 110%; font-family: dinb, arial, sans-serif; margin-bottom: 6px; }
 .rules p { margin-bottom: 1.5em; }
+
+.danke { text-align: center; text-transform: uppercase; letter-spacing: 2px; padding-top: 200px; padding-bottom: 200px; line-height: 2; }
 
 .sl__wrap, .map, .schedule, .placeholder, .friends { display: none; }
 
