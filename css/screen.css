@@ -200,7 +200,7 @@ body { font-size: 12px; font-family: Arial, sans-serif; line-height: 1.4; font-f
 
 .h { background: #007873; color: white; border-bottom: 9px solid #aa7f4d; margin-bottom: 40px; padding-left: 30%; min-height: 78px; position: relative; }
 @media only screen and (max-width: 700px) { .h { padding-left: 20px; padding-bottom: 10px; } }
-.h .h__back { position: absolute; left: 15px; top: 20px; border: 3px solid white; font-size: 16px; text-transform: uppercase; color: white; text-decoration: none; padding: 0 18px 0 15px; height: 30px; line-height: 33px; }
+.h .h__back { position: absolute; left: 15px; cursor: pointer; top: 20px; border: 3px solid white; font-size: 16px; text-transform: uppercase; color: white; text-decoration: none; padding: 0 18px 0 15px; height: 30px; line-height: 33px; }
 @media only screen and (max-width: 700px) { .h .h__back { display: inline-block; position: static; margin-top: 10px; } }
 .h .h__back:before { content: " "; background: url('../img/icons-sce0d3a1898.png') 0 -1178px no-repeat; width: 16px; height: 12px; vertical-align: middle; margin-right: 10px; display: inline-block; position: relative; top: -2px; }
 .h .h__back:hover { background: white; color: #007873; }

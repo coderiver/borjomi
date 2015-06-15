@@ -84,7 +84,7 @@
 <div class="out">
 
  <div class="h">
- 	<a href='#' onclick="history.go(-1);"  class="h__back">повернутися</a>
+ 	<a onclick="history.go(-1);"  class="h__back">повернутися</a>
  	<div class="h__text">
  		Форма реєстрації для участі<br>
 у Фестивалі виконавців джазу
